@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for todo in todos %}  
+<!-- # todos yerine bunu object_list yazsaydik   -->
+
+<a href="{% url 'detail' todo.id %}">
+<li>
+
+    {{ todo }}</li>
+
+
+</a>
+
+
+{% endfor %}
+</ul>
+{% endblock content %}

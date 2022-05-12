@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+ {% block content %}
+ <h1>detail</h1>
+ <br>
+<div>{{todo}}</div>
+
+<br />
+<a href="{% url 'update' todo.id %}"><button>Update</button></a>
+<a href="{% url 'delete' todo.id %}"><button>Delete</button></a>
+
+{% endblock content %}
